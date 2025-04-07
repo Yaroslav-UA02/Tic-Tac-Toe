@@ -1,0 +1,87 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+#content {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+tr:first-child td { border-top: none; }
+tr:last-child td { border-bottom: none; }
+td:first-child { border-left: none; }
+td:last-child { border-right: none; }
+
+.fade-in {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: appear 0.3s forwards;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#calculator {
+    margin-top: 40px;
+}
+
+#calculator input {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  select {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+tr:first-child td {
+    border-top: none;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+td:first-child {
+    border-left: none;
+}
+td:last-child {
+    border-right: none;
+}
